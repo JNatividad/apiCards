@@ -1,0 +1,77 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #2980b9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 10rem auto;
+  /* border: 1px solid black; */
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.container-grid div {
+  /* box-shadow: 1px 1px 1px black; */
+  padding: 10px;
+  border: 1px solid rgb(53, 53, 53);
+  min-height: 400px;
+  transition: 300ms all;
+}
+
+.container-grid div:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.container-grid div p {
+  text-align: center;
+  font-family: helvetica;
+}
+
+.text-ID {
+  font-weight: bold;
+  color: rgb(54, 150, 247);
+}
+
+.text-desc {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  img {
+    max-width: 100%;
+    background-size: cover;
+  }
+}
+.race-title {
+  color: dodgerblue;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(34, 34, 34);
+}
